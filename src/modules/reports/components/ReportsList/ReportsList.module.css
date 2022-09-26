@@ -1,0 +1,86 @@
+.list {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  padding-bottom: 20px;
+
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent 158px,
+    #e0e5eb 158px,
+    #e0e5eb 159px
+  );
+}
+.icon {
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  filter: invert(9%) sepia(34%) saturate(3834%) hue-rotate(198deg)
+    brightness(90%) contrast(97%);
+}
+.item {
+  width: 33%;
+  height: 118px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  background-image: url('../../../../images/icons/category/background/normal.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 55%;
+
+  hyphens: auto;
+}
+
+.itemActive {
+  width: 33%;
+  height: 118px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  background-image: url('../../../../images/icons/category/background/onHover.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 55%;
+
+  hyphens: auto;
+}
+
+.itemActive .icon {
+  filter: invert(71%) sepia(65%) saturate(5152%) hue-rotate(345deg)
+    brightness(99%) contrast(104%);
+}
+
+.item:hover {
+  background-image: url('../../../../images/icons/category/background/onHover.svg');
+}
+.item:hover .icon {
+  filter: invert(71%) sepia(65%) saturate(5152%) hue-rotate(345deg)
+    brightness(99%) contrast(104%);
+}
+.noData {
+  color: #52555f;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .item {
+    width: auto;
+  }
+  .itemActive {
+    width: auto;
+  }
+  .list {
+    background-image: none;
+    justify-content: center;
+  }
+}

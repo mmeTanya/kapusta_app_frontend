@@ -1,0 +1,19 @@
+@media screen and (min-width: 768px) {
+  .inlineBlock {
+    display: flex;
+  }
+  .inlineBalanceBlock {
+    margin-left: auto;
+    width: 70%;
+    justify-content: space-between;
+    margin-top: 40px;
+
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .inlineBalanceBlock {
+    width: 85%;
+  }
+}

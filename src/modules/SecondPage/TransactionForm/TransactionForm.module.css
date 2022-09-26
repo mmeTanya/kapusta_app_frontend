@@ -1,0 +1,505 @@
+.wrap {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.iconCalculator {
+  height: 44px;
+
+  display: block;
+  border-radius: 0 22px 22px 0;
+  margin-left: auto;
+  margin-right: auto;
+
+  position: relative;
+  width: 35px;
+  border: 2px solid #fff;
+  border-left: none;
+}
+
+.inputCountOverlay {
+  display: flex;
+  align-items: center;
+}
+
+.inputCount {
+  width: 120px;
+  height: 44px;
+  border: 2px solid #fff;
+  border-radius: 22px 0 0 22px;
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  margin-top: 32px;
+  background-color: transparent;
+  color: #52555f;
+  outline: none;
+}
+
+.inputCount::-webkit-outer-spin-button,
+.inputCount::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.inputCount::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: #c7ccdc;
+}
+
+.buttonWrap {
+  justify-content: center;
+  margin: 0;
+}
+
+.dateWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.datePicker {
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 14px;
+  color: #52555f;
+  background-color: transparent;
+  border: none;
+  position: relative;
+  z-index: 1;
+}
+
+.datePicker:focus {
+  outline-color: transparent;
+}
+
+.datePicker::-webkit-calendar-picker-indicator {
+  color: rgba(0, 0, 0, 0);
+  z-index: 9;
+  width: 90px;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+}
+
+.dateButton {
+  background-color: transparent;
+  border: none;
+  position: relative;
+  padding: 20px 40px;
+  cursor: pointer;
+}
+.dateButtonText {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  color: #52555f;
+}
+.calendarIcon {
+  position: absolute;
+  z-index: 2;
+  left: 12px;
+  top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .formControl {
+    display: flex;
+  }
+  .overlay {
+    display: flex;
+  }
+  .containerForm {
+    display: flex;
+  }
+
+  .svg {
+    position: relative;
+    right: -79px;
+    bottom: 31px;
+  }
+
+  .inputCount::placeholder {
+    color: #c7ccdc;
+  }
+  .inputCount {
+    border: 2px solid #f5f6fb;
+    border-left: none;
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+    margin: 0;
+    width: 70px;
+    height: 44px;
+  }
+
+  .description {
+    border: 2px solid #f5f6fb;
+    border-radius: 16px 0 0 0;
+    border-right: none;
+    width: 181px;
+    padding: 0 20px;
+    height: 44px;
+    outline: none;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    line-height: 14px;
+  }
+
+  .dateWrapper {
+    position: relative;
+    display: block;
+    margin-right: 44px;
+  }
+
+  .wrapInput {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .blockButton {
+    display: flex;
+    align-items: center;
+  }
+  .inputWrapper {
+    position: relative;
+  }
+  .inputWrapper img {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    padding: 10px 25px;
+  }
+  .buttonWrap {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    margin-top: 32px;
+  }
+  .iconCalculator {
+    height: 44px;
+
+    display: block;
+    border-radius: 0 16px 16px 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    position: relative;
+    width: 35px;
+    border: 2px solid #f5f6fb;
+    border-left: none;
+  }
+  .calculator {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.containerForm {
+  padding-top: 32px;
+}
+
+.product {
+  border: 2px solid #f6f7fc;
+  width: 288px;
+  height: 38px;
+  border-radius: 16px 0px 0px 0px;
+}
+
+::placeholder {
+  font-weight: 400;
+  color: #c7ccdc;
+}
+
+.select {
+  width: 280px;
+  height: 44px;
+  border: 2px solid #fff;
+  border-bottom-right-radius: 16px;
+  color: #c7ccdc;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.02em;
+  padding-left: 20px;
+  color: #c7ccdc;
+}
+
+.svg {
+  position: relative;
+  right: 35px;
+  bottom: -4px;
+}
+
+.inputCountWrapper {
+  position: relative;
+  width: 183px;
+}
+
+.calculatorIcon {
+  position: absolute;
+  right: 30px;
+  top: 44px;
+}
+
+.inputCount::placeholder {
+  color: #c7ccdc;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.btnWrapper {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 1280px) {
+  .inputCountOverlay {
+    position: relative;
+  }
+  .blockButton {
+    display: flex;
+    align-items: center;
+  }
+
+  .wrap {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 0;
+  }
+
+  .wrapInput {
+    display: flex;
+    align-items: center;
+  }
+
+  .datePicker {
+    width: 104px;
+    text-align: center;
+  }
+
+  .description {
+    width: 250px;
+    outline: none;
+  }
+
+  .inputCountWrapper {
+    position: relative;
+    width: 121px;
+  }
+
+  .inputCount {
+    width: 100px;
+    height: 44px;
+    outline: none;
+  }
+
+  .dateWrapper {
+    margin-right: 32px;
+    position: relative;
+  }
+
+  .btnClear {
+    width: 136px;
+  }
+
+  .buttonWrap {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    margin-left: 32px;
+  }
+
+  .inputWrap {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .btnWrapper {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.datePicker {
+  position: relative;
+  font-weight: 900;
+  font-size: 12px;
+  font-family: Roboto;
+  line-height: 14px;
+  color: #52555f;
+  background-color: transparent;
+  border: none;
+  width: 110px;
+  height: 44px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 9;
+  outline: none;
+}
+
+.datePicker:focus {
+  outline-color: transparent;
+}
+
+.datePicker::-webkit-calendar-picker-indicator {
+  color: rgba(0, 0, 0, 0);
+  z-index: 9;
+  width: 110px;
+  height: 44px;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+}
+
+.btnInput {
+  width: 136px;
+  height: 44px;
+  background-color: transparent;
+  border: none;
+  border-radius: 16px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin-right: 16px;
+  color: #2e2f30;
+  box-shadow: 2px 2px 22px 0px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.btnInput:hover,
+btnInput:focus {
+  background: #ff751d;
+  color: #fff;
+  box-shadow: 8px 2px 22px 0px rgba(0, 0, 0, 0.38);
+  cursor: pointer;
+}
+
+.btnClear {
+  width: 130px;
+  height: 44px;
+  background-color: transparent;
+  border: none;
+  border-radius: 16px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+
+  color: #2e2f30;
+  box-shadow: 2px 2px 22px 0px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.btnClear:hover,
+btnClear:focus {
+  background: #ff751d;
+  color: #fff;
+  box-shadow: 8px 2px 22px 0px rgba(0, 0, 0, 0.38);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .iconCalculator {
+    margin-top: 32px;
+  }
+
+  .wrap {
+    margin-top: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .blockButton {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .overlay {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .datePicker {
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  .description {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 12px;
+    box-sizing: border-box;
+    width: 280px;
+    height: 44px;
+    border: 2px solid #ffffff;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    padding-left: 20px;
+    background: #f5f6fb;
+    outline: none;
+  }
+
+  .description::placeholder {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+  }
+  .calculator {
+    margin-left: 5px;
+    margin-top: 12px;
+  }
+
+  .buttonWrap {
+    display: flex;
+    margin-top: 80px;
+  }
+  .btnInput {
+    margin-right: 20px;
+  }
+}

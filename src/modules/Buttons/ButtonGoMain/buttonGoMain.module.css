@@ -1,0 +1,38 @@
+.buttonLink {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 20px 30px 20px 0;
+}
+
+.buttonGoBack {
+  border: none;
+  border: none;
+  display: flex;
+  height: 26px;
+  align-items: center;
+}
+
+.buttonText {
+  margin: 0;
+  visibility: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .buttonLink {
+    padding: 0;
+    margin-top: 40px;
+  }
+  .buttonText {
+    visibility: visible;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    margin-left: 15px;
+
+    letter-spacing: 0.04em;
+
+    color: rgba(82, 85, 95, 0.7);
+  }
+}

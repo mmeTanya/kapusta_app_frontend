@@ -1,0 +1,137 @@
+.form {
+  margin: 0 auto;
+}
+
+.form__title_first {
+  text-align: center;
+  width: 238px;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: #52555f;
+  margin: 0 auto;
+  font-family: 'Roboto';
+}
+
+.form__title {
+  text-align: start;
+  width: 238px;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: #52555f;
+
+  margin: 0 auto;
+  font-family: 'Roboto';
+}
+
+.googleImage__background {
+  display: block;
+  width: 120px;
+  background-color: #f6f7fb;
+  border-radius: 30px;
+  box-shadow: 1px 2px 3px 0px #aab2c533;
+  margin: 16px auto 30px;
+  padding: 10px 0;
+}
+
+.googleImage {
+  display: block;
+  margin: auto;
+}
+
+.form_field {
+  margin: 17px 0;
+}
+
+.form__input {
+  display: block;
+  box-sizing: border-box;
+  width: 240px;
+  height: 52px;
+  padding: 0 20px;
+  outline: none;
+  margin: 7px auto;
+  border: none;
+  background: #f6f7fb;
+  border-radius: 30px;
+}
+
+.form__input_error {
+  display: block;
+  box-sizing: border-box;
+  width: 240px;
+  height: 52px;
+  padding: 0 20px;
+  outline: none;
+  margin: 0 auto;
+  border: 1px solid red;
+  background: #f6f7fb;
+  border-radius: 30px;
+}
+
+.form__label {
+  display: inline-block;
+  padding: 4px 23px;
+  color: #000000;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+  letter-spacing: 0.04em;
+}
+
+.form__error {
+  color: red;
+  font-size: 8px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  padding: 4px 25px;
+  margin-top: 5px;
+  display: block;
+}
+
+.form__list {
+  padding: 0;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto 0;
+}
+
+.form__item:not(:last-child) {
+  margin-right: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .googleImage__background {
+    margin-top: 32px;
+  }
+  .form__title_first {
+    width: 259px;
+    font-size: 12px;
+  }
+  .form__title {
+    width: 259px;
+    font-size: 12px;
+  }
+  .form__input {
+    margin: 10px auto;
+    width: 258.92px;
+  }
+  .form_field {
+    margin: 17px 0;
+  }
+  .form__input_error {
+    width: 258.92px;
+  }
+  .form__label {
+    font-size: 12px;
+    padding: 4px 85px;
+  }
+  .form__error {
+    font-size: 9px;
+    padding: 4px 85px;
+  }
+}

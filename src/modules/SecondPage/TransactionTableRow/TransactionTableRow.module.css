@@ -1,0 +1,125 @@
+/* ----------------COMMON---------------- */
+
+.tableRow {
+  border-bottom: 2px solid #f2f8f8;
+  position: relative;
+  font-family: Roboto, sans-serif;
+  font-size: 8px;
+  line-height: 1.16;
+  color: #52555f;
+}
+
+.minus {
+  margin-right: 5px;
+}
+
+.tableDataDescription {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.tableDataSum {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* ----------------MOBILE---------------- */
+
+@media screen and (max-width: 767px) {
+  .tableRow {
+    display: flex;
+    position: relative;
+  }
+
+  .tableRow td:not(:nth-child(2)) {
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
+
+  .tableDataDate {
+    position: absolute;
+    width: 23%;
+    top: 25%;
+  }
+
+  .tableDataDescription {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    max-width: 50%;
+
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  .tableDataCategory {
+    position: absolute;
+    top: 25%;
+    left: 23%;
+    width: 30%;
+  }
+
+  .tableDataSum {
+    text-align: right;
+    padding-left: 50%;
+    padding-right: 20px;
+    width: 100%;
+  }
+
+  .tableDataBtn {
+    text-align: center;
+  }
+}
+
+/* ----------------TABLET & DESKTOP---------------- */
+
+@media screen and (min-width: 768px) {
+  .tableRow {
+    width: calc(100% - 2px);
+
+    font-size: 12px;
+  }
+
+  .tableRow td {
+    width: 25%;
+  }
+
+  .tableDataDate {
+    padding-left: 15px;
+    text-align: left;
+  }
+
+  .tableDataDescription {
+    width: 27%;
+    max-width: 50px;
+    padding-left: 5px;
+
+    text-align: left;
+  }
+
+  .button {
+    width: 32px;
+    height: 32px;
+    padding: 7px;
+  }
+
+  .button:hover {
+    border-radius: 50%;
+    background-color: #f5f6fb;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .tableRow td {
+    width: 20%;
+  }
+}

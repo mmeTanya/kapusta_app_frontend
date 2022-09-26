@@ -1,0 +1,83 @@
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #f5f6fa;
+
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.6;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+
+  color: #52555f;
+}
+
+.name {
+  display: none;
+  margin-right: 20px;
+  font-size: 12px;
+  line-height: 1.6;
+  letter-spacing: 0.04em;
+
+  color: #52555f;
+}
+
+.btn {
+  padding: 0;
+  background-color: transparent;
+
+  border: none;
+}
+
+.logoutIcon {
+  margin-right: 20px;
+  width: 16px;
+  height: 16px;
+}
+
+.logout {
+  display: none;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.6;
+  letter-spacing: 0.04em;
+
+  text-decoration: underline;
+
+  color: #52555f;
+}
+
+@media screen and (min-width: 768px) {
+  .name {
+    display: inline-block;
+  }
+
+  .btn {
+    padding: 11px 20px;
+    border-left: 1px solid #e0e5eb;
+    z-index: 1111111;
+  }
+
+  .logoutIcon {
+    display: none;
+  }
+
+  .logout {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .avatar {
+    margin-right: 10px;
+  }
+}

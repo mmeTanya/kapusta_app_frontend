@@ -1,0 +1,74 @@
+.button {
+  padding: 12px 36px 12px 36px;
+  border-radius: 16px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.exit {
+  width: 125px;
+  height: 44px;
+  background: #fff;
+  border-radius: 16px;
+  border: none;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #52555f;
+  cursor: pointer;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: 2px solid #f5f6fb;
+}
+
+.exit:hover,
+.exit:focus {
+  background-color: #ff751d;
+  border-radius: 16px;
+  color: #ffffff;
+}
+
+.submit {
+  width: 116px;
+  height: 44px;
+  background: #fff;
+  border-radius: 16px;
+  border: none;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #52555f;
+  cursor: pointer;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: 2px solid #f5f6fb;
+}
+
+.submit:hover,
+.submit:focus {
+  background-color: #ff751d;
+  border-radius: 16px;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .submit {
+    width: 122px;
+  }
+}

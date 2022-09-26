@@ -1,0 +1,115 @@
+.wrapper {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 5px 10px 20px rgba(170, 178, 197, 0.4);
+  border-radius: 20px;
+}
+
+.wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    height: 50px;
+    width: 704px;
+    justify-content: center;
+    display: flex;
+    background: #ffffff;
+    box-shadow: 0px 10px 60px rgba(170, 178, 197, 0.2);
+    border-radius: 30px;
+  }
+
+  .wrap {
+    width: 704px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .wrapper {
+    width: 100%;
+  }
+}
+
+.list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.listItem {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: center;
+}
+
+.listItem:first-child {
+  border-right: 1px solid #e0e5eb;
+}
+
+.expenses {
+  background: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: center;
+  color: #e53935;
+  border: none;
+}
+
+.income {
+  background: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: center;
+  color: #407946;
+  border: none;
+}
+
+@media screen and (max-width: 771px) {
+  .wrapper {
+    background-color: white;
+  }
+
+  .listItem:first-child {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 5px 25px 5px;
+    width: 50%;
+  }
+
+  .listItem:last-child {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 5px 25px 5px;
+    width: 50%;
+  }
+
+  .transactionType {
+    margin-bottom: 5px;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 772px) {
+  .listItem {
+    display: flex;
+    padding: 15px 20px 15px 20px;
+  }
+
+  .expenses {
+    margin-left: 15px;
+  }
+
+  .income {
+    margin-left: 15px;
+  }
+}

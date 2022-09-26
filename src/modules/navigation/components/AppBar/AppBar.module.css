@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 56px;
+  background-color: #fff;
+}
+
+.logo {
+  margin-left: 19px;
+  width: 90px;
+  height: 31px;
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-left: 26px;
+  }
+}

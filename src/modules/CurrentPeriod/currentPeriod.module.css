@@ -1,0 +1,65 @@
+.container {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 772px) {
+  .container {
+    margin-bottom: 0;
+  }
+}
+
+.currentPeriod {
+  font-weight: 400;
+  font-size: 12px;
+  margin-bottom: 5px;
+  color: #52555f;
+  opacity: 70%;
+}
+
+.dataWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.date {
+  justify-content: center;
+  width: 120px;
+  display: flex;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.month {
+  color: black;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+.year {
+  color: black;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.img {
+  width: 6px;
+  align-self: center;
+  display: block;
+}
+
+.arrowButton {
+  vertical-align: center;
+  padding: 5px 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    margin-bottom: 0;
+  }
+}
